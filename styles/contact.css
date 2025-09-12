@@ -1,0 +1,113 @@
+.contact-container{
+    width: 500px;
+    margin-left: 700px;
+}
+
+.form-div{
+   display: grid;
+   grid-template-columns: 600px;
+   column
+}
+
+.call-to-action{
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.contact-span{
+    color:  rgb(128, 50, 50);
+}
+
+.fname{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 40px;
+    border:solid;
+    border-width:2px;
+    border-color: rgb(109, 50, 50);
+    
+}
+
+.fname:hover{
+    background-color: rgba(194, 10, 10, 0.212);
+    color: white;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: rgb(211, 85, 85);
+    font-weight: bold;
+}
+
+.lname{
+    color: white;
+    background-color: black;
+    height: 30px;
+    border-radius: 10px;
+    height: 40px;
+    border:solid;
+    border-width:2px;
+    border-color: rgb(128, 50, 50);
+}
+
+.lname:hover{
+    background-color: rgba(194, 10, 10, 0.212);
+    color: white;
+    cursor: pointer;
+}
+
+.email{
+    color: white;
+    background-color: black;
+    height: 30px;
+    border-radius: 10px;
+    height: 40px;
+    border:solid;
+    border-width:2px;
+    border-color: rgb(128, 50, 50);
+}
+
+.email:hover{
+    background-color: rgba(194, 10, 10, 0.212);
+    color: white;
+    cursor: pointer;
+}
+
+.query{
+    color: white;
+    background-color: black;
+    height: 90px;
+    border-radius: 10px;
+    border:solid;
+    border-width:2px;
+    border-color: rgb(68, 0, 0);
+}
+
+
+.query:hover{
+    background-color: rgba(194, 10, 10, 0.212);
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button{
+    height: 30px;
+    width: 250px;
+    background-color: black;
+    color:  rgb(211, 85, 85);
+    border:solid;
+    border-width:2px;
+    border-color: rgb(128, 50, 50);
+    margin-left: 160px;
+    box-shadow: 2px 2px 2px rgba(216, 12, 12, 0.589);
+}
+
+.submit-button:hover{
+    background-color: rgb(156, 0, 0);
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.589);
+}
+
