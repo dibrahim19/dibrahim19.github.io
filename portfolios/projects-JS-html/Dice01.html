@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Dice</title>
+        <style>
+           
+            h1{
+                
+            }
+            .name-intro{
+              
+                 display: inline-block;
+            }
+            .dice-div{
+              
+                column-gap: 10px;
+            }
+            input{
+                
+                height: 30px;
+             
+            }
+            .button-try{
+                background-color: black;
+                color:white;
+                height:35px;
+                border-radius: 9px;
+                
+            }
+            .button-try:hover{
+                background-color:rgb(255, 255, 255);
+                color: black;
+            }
+            .dice-section{
+                background-color: rgb(247, 247, 247);
+                text-align: center;
+                margin-top: 200px;
+                border-radius: 70px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <section class="dice-section">  
+        <div class="dice-div"> 
+        <h1 > Roll Dice</h1>
+        <div> 
+         <p class="name-intro">Dice Roll (up to 4)</p> : <input type="text" id="dice1" value="1" >
+        <button onclick="rollDice()" class="button-try"> Try it  </button>
+        </div>
+        
+        <div> 
+          <p class="name-intro">Dice Roll (up to 6)</p> : <input type="text" id="dice2" value="1" >
+        <button onclick="rollDice2()" class="button-try"> Try it  </button>
+        </div>
+
+         <div> 
+         <p class="name-intro">Dice Roll (up to 8)</p> : <input type="text" id="dice3" value="1" >
+        <button onclick="rollDice3()" class="button-try"> Try it  </button>
+        </div>
+
+        <div> 
+         <p class="name-intro">Dice Roll (up to 10)</p> : <input type="text" id="dice4" value="1" >
+        <button onclick="rollDice4()" class="button-try"> Try it  </button>
+        </div>
+
+        <div> 
+         <p class="name-intro">Dice Roll (up to 12)</p> : <input type="text" id="dice5" value="1" >
+        <button onclick="rollDice5()" class="button-try"> Try it  </button>
+        </div>
+        </section>
+        <script>
+            function rollDice(){
+            var dice1 = Math.floor((Math.random() * 4) + 1);
+            document.getElementById("dice1").value = dice1;
+            }
+
+             function rollDice2(){
+            var dice2 = Math.floor((Math.random() * 6) + 1);
+            document.getElementById("dice2").value = dice2;
+            }
+
+            function rollDice3(){
+            var dice3 = Math.floor((Math.random() * 8) + 1);
+            document.getElementById("dice3").value = dice3;
+            }
+
+            function rollDice4(){
+            var dice4 = Math.floor((Math.random() * 10) + 1);
+            document.getElementById("dice4").value = dice4;
+            }
+
+            function rollDice5(){
+            var dice5 = Math.floor((Math.random() * 12) + 1);
+            document.getElementById("dice5").value = dice5;
+            }
+        </script>
+       
+
+    </body>
+</html>

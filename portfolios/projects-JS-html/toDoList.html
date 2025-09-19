@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> password strength checker </title>
+    <style>
+        p{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .hero{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 350px;
+        }
+        #user-input{
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            width: 400px;
+            background: transparent;
+        }
+        .tasks-div{
+            background: transparent;
+            border: solid;
+            border-width: 1px;
+            height: 200px;
+        }
+        .submit-button{
+            margin-top: 9px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            height: 22px;
+        }
+        .submit-button:hover{
+            background-color: white;
+            color: black;  
+        }
+    </style>
+    <script>
+        function tasklist(){
+            var user_tasks = document.getElementById("user-input").value;
+            var tasks = document.getElementById("tasks1")
+            tasks.innerHTML += user_tasks + "<br>";
+            return false;
+        }
+        functi
+    </script>
+    </head>
+    <body>
+        <div class="hero">
+        <div class="form-div"> 
+        <form action="" name="Form1" onsubmit="return tasklist()"> 
+            <label for="list" id="title"> </label>
+            <input type="text" placeholder="Enter task" id="user-input">
+            <div class="tasks-div"> 
+            <p id="tasks1"> </p>
+            </div>
+            <button type="submit" class="submit-button" > Add </button>
+        </form>
+        </div>
+        </div>
+
+
+
+
+    </body>
+</html>

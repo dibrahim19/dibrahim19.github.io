@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> date span calculator </title>
+        <script> 
+            function calcDate()
+            {
+                var date1 = new Date(document.forms["Form1"]["date1"].value);
+                var date2 = new Date(document.forms["Form1"]["date2"].value);
+
+                const diffTime = Math.abs(date2 - date1);
+                const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+                const diffMonth = Math.round(diffDays / 30);
+                const diffYear = Math.round(diffDays / 365);
+
+                document.getElementById("answer").value = "Result: " + diffDays.toString() + " Days";
+                document.getElementById("answer2").value = "Result: " + diffMonth.toString() + " Month";
+                document.getElementById("answer3").value = "Result: " + diffMonth.toString() + " Year";
+                return false;
+            }
+        </script>
+        <style> 
+            .hero{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 300px;
+            }
+
+            .button-sub{
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <div class="hero"> 
+        <div>
+            <h1>Date Spanner </h1>
+            <form name="Form1" action="" method="post" onsubmit=" return calcDate()">
+                <label for="date1"> Choose a date for the event</label>
+                <input type="date" id="date1" name="date1" required>
+                <br>
+                <label for="date2"> Choose a date for the event</label>
+                <input type="date" id="date2" name="date2" required>
+                <br>
+
+                <button type="submit" class="button-sub"> Submit</button>
+                <br>
+                <label for="answer"> Result</label>
+                <input type="text" id="answer">
+                <input type="text" id="answer2">
+                <input type="text" id="answer3">
+            </form>
+        </div>
+    </div>
+</html>

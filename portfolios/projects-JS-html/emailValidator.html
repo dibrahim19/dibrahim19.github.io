@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> form validator</title>
+    <script>
+        console.log("Hello world!");
+        function validateForm()
+        {
+            console.log("in VF");
+            var userName = document.getElementById("username");
+            if (userName == null || userName== "");
+            {
+                alert("Username must not be blank!");
+                return false;
+            }
+            
+            return true;
+          
+        }
+
+        function formTest()
+        {
+            console.log("This is a test");
+            return false;
+        }
+
+        function validateEmail()
+        {
+            var emailField = document.getElementById("email");
+            var emailError = document.getElementsByClassName("error-message");
+
+
+
+            if (!emailField.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) 
+            {
+                    emailError.innerHTML = "Please enter a valid email";
+                    emailField.style.borderColor = "red";
+                    emailError.style.top = "120%";
+                    return false;
+                }
+
+                emailError.innerHTML=""; 
+                emailField.style.borderColor = "green";
+                emailError.style.top = "120%";
+                return true;
+            
+        }
+    </script>
+    <style>
+        .hero{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 300px;
+            
+        }
+    </style>
+    </head>
+    <body>
+        <div class="hero"> 
+        <div> 
+        <h1> Simple Form validator</h1>
+        <Form name="Form1" action="" onsubmit="return validateForm()" method="post">
+
+        <p> Username: <input type="text" name="username" value="" id="username"></p>
+        <p> Email: <input type="text" name="email" id="email" onkeyup="validateEmail()"></p>
+        <p class="error-message"> </p>
+        <p> Password: <input type="password" name="password1" value=""></p>
+        <p> Repeat password: <input type="password" name="password2" value=""></p>
+        
+        <p> <input type="submit" value="Submit"></p>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
