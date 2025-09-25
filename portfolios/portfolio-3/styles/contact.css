@@ -6,8 +6,8 @@
   display: flex;
   justify-content: center;
   min-height: 50vh;
- 
-  width:1520px;
+  width:100%;
+  margin-top: 600px;
   
 }
 

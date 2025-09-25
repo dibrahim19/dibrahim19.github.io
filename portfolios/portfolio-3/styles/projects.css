@@ -1,0 +1,23 @@
+.projects-container{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    column-gap: 29px;
+}
+
+.awrc-preview{
+    width: 500px;
+    height:300px;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 600px;
+    width: 300px;
+    font-weight: 600;
+}
+.awrc-preview:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.7s;
+}

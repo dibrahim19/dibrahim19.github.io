@@ -2,7 +2,7 @@
 
 .section-skills{
     margin-top: 150px;
-    scroll-behavior: smooth;
+  
 }
 
 .skills-container{
@@ -40,7 +40,7 @@
 .skill-div:hover{
     border-radius: 10px;
     background-color: rgb(207, 102, 102);
-    transition: 0.8s
+    transition: 0.4s
     
 }
 .skill-para{
