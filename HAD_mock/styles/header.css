@@ -1,0 +1,25 @@
+ .header-div{
+            display: flex;
+            flex-direction: row;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-top: -29px;
+        }
+        .left-section{
+            flex: 1;
+        }
+        .right-section{
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .logo{
+            height: 200px;
+            width: auto;
+        }
+        .footer-rights{
+            text-align: center;
+            color: black;
+        }

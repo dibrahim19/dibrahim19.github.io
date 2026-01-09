@@ -1,0 +1,17 @@
+body{
+            background-color: #0F5E77;
+            font-family: 'Roboto', sans-serif;
+        }
+p{
+    color: white;
+            margin: 0;
+}
+a{
+            text-decoration: none;
+            color: white;
+}
+
+.footer-rights{
+     text-align: center;
+     color: black;
+}
